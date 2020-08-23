@@ -1,0 +1,23 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #363434;
+    /* background: url(./assets/images/Optimized-jake-weirick-1Ad511F-ia0-unsplash.jpeg); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box {
+  background-color: rgba(109, 100, 100, 0.5);
+  width: 75%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#player {
+  margin: auto;
+  width: 500px;
+}
