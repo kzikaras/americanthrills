@@ -1,8 +1,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #363434;
-    /* background: url(./assets/images/Optimized-jake-weirick-1Ad511F-ia0-unsplash.jpeg); */
+    background: url(./assets/images/Optimized-SmallBackgroundfireworksnewfont.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -17,7 +16,20 @@ body {
   margin-right: auto;
 }
 
+#logo {
+  max-width: 100px;
+}
+
 #player {
   margin: auto;
   width: 500px;
+}
+
+#click-box {
+  width: 100%;
+  height: 100vh;
+}
+
+#click-box:hover {
+  cursor: pointer;
 }
