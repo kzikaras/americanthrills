@@ -51,6 +51,8 @@ body {
 #spotify-mobile>iframe {
   margin-left: auto;
   margin-right: auto;
+  position: fixed;
+  bottom: 0px;
 }
 
 @media (max-width: 992px) {
