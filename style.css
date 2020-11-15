@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background: url(./assets/images/Optimized-bloksfire2.jpg);
+    background: url(./assets/images/Optimized-UpdateFireBackground\ \(1\).jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -36,4 +36,28 @@ body {
 
 #click-box:hover {
   cursor: pointer;
+}
+
+#spotify-desktop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+#spotify-mobile {
+  display: none;
+}
+
+#spotify-mobile>iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 992px) {
+  #spotify-desktop {
+    display: none;
+  }
+  #spotify-mobile {
+    display: inline;
+  }
 }
