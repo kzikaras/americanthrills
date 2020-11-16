@@ -45,7 +45,8 @@ body {
 }
 
 #spotify-mobile {
-  display: none;
+  /* Disable for now */
+  /* display: none; */
 }
 
 #spotify-mobile>iframe {

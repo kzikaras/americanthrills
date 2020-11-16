@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '381902306293003'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" 
+      src="https://www.facebook.com/tr?id=381902306293003&ev=PageView
+      &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
@@ -17,17 +36,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="color:#F6F6F6; background-color: #241A19;">
       <div class="navbar-nav">
-        <a class="nav-link" href="https://open.spotify.com/artist/6rcZVbLYpabmKH6qxIcIjh?nd=1"><i class="fab fa-spotify"></i> Spotify</a>
-        <a class="nav-link" href="#"><i class="fab fa-apple"></i> Apple Music</a>
-        <a class="nav-link" href="https://youtube.com/channel/UCaIBVfbCiyVacl44yp12lzw"><i class="fab fa-youtube"></i> Youtube</a>
-        <a class="nav-link" href="#"><i class="fab fa-amazon"></i> Amazon Music</a>
-        <a class="nav-link" href="https://americanthrills.bandcamp.com/merch/american-thrills-logo-t-shirt"><i class="fab fa-bandcamp"></i> Bandcamp</a>
+        <a class="nav-link lead" href="https://open.spotify.com/artist/6rcZVbLYpabmKH6qxIcIjh?nd=1"><i class="fab fa-spotify"></i> Spotify</a>
+        <a class="nav-link lead" href="#"><i class="fab fa-apple"></i> Apple Music</a>
+        <a class="nav-link lead" href="https://youtube.com/channel/UCaIBVfbCiyVacl44yp12lzw"><i class="fab fa-youtube"></i> Youtube</a>
+        <a class="nav-link lead" href="#"><i class="fab fa-amazon"></i> Amazon Music</a>
+        <a class="nav-link lead" href="https://americanthrills.bandcamp.com/merch/american-thrills-logo-t-shirt"><i class="fab fa-bandcamp"></i> Bandcamp</a>
+        <a class="nav-link lead" href="/mailinglist.html">
+          <div id="mail-desktop"><i class="fas fa-envelope"></i> Email List</div>
+        </a>
       </div>
     </div>
   </nav>
-  <div id="spotify-desktop">
+  <!-- <div id="spotify-desktop">
     <iframe src="https://open.spotify.com/embed/track/3FxvQumJdYm9Vv8ZJO05dd" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  </div>
+  </div> -->
   <div id="spotify-mobile"><iframe src="https://open.spotify.com/embed/track/3FxvQumJdYm9Vv8ZJO05dd" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
     <div id="click-box"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -36,6 +58,9 @@
     <script>
       $('#click-box').click(function() {
         window.open('https://linktr.ee/americanthrills', '_blank');
+      });
+      $('.lead, #click-box').click(function() {
+        fbq('track', 'Lead');
       });
     </script>
   </body>
