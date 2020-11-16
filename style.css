@@ -61,6 +61,6 @@ body {
     display: none;
   }
   #spotify-mobile {
-    display: inline;
+    /* display: inline; */
   }
 }
