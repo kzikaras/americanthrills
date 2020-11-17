@@ -55,12 +55,3 @@ body {
   position: fixed;
   bottom: 0px;
 }
-
-@media (max-width: 992px) {
-  #spotify-desktop {
-    display: none;
-  }
-  #spotify-mobile {
-    /* display: inline; */
-  }
-}
