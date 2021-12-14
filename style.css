@@ -1,11 +1,15 @@
 
-body {
+/* body {
     font-family: 'Raleway', sans-serif;
     background: url(./assets/images/oldthingsbg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+body {
+  background-color: #3D3B3C;
 }
 
 .navbar-dark {
