@@ -12,7 +12,7 @@ body {
   background-color: #3D3B3C;
 }
 
-.navbar-dark {
+/* .navbar-dark {
   color:#F6F6F6;
 }
 
@@ -46,16 +46,16 @@ body {
   position: fixed;
   top: 0px;
   right: 0px;
-}
+} */
 
 #spotify-mobile {
   /* Disable for now */
   /* display: none; */
 }
-
+/* 
 #spotify-mobile>iframe {
   margin-left: auto;
   margin-right: auto;
   position: fixed;
   bottom: 0px;
-}
+} */
